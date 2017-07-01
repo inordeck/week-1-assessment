@@ -13,3 +13,6 @@ text link blue: #3b6f98;
 text gray: #585858;
 copyright text: #acacad;
 */
+body {
+	font-family: 'Open Sans', sans-serif;
+}
