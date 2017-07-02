@@ -78,7 +78,7 @@ section { /* // GRAY BACKGROUND // */
 #boxContent {
 	float: right;
 	width: 400px;
-	margin: 0 100px;
+	margin: -500px 100px 50px 100px;
 	padding: 25px 70px;
 	border-radius: 6px;
 	background: white; /* do not support gradients */
@@ -86,7 +86,7 @@ section { /* // GRAY BACKGROUND // */
  	background: -webkit-linear-gradient(white, #f3f4f6); /* safari */
  	background: -o-linear-gradient(white, #f3f4f6); /* opera */
  	background: -moz-linear-gradient(white, #f3f4f6); /* firefox */
- 	box-shadow: -10px 0 10px -5px #f3f4f6 /* left side */, 10px 0 10px -5px #f3f4f6 /* right side */;
+ 	box-shadow: -10px 0 10px -5px rgba(0,0,0,0.25) /* left side */, 10px 0 10px -5px rgba(0,0,0,0.25) /* right side */;
 }
 h1 {
 	margin: 0 0 20px 0;
@@ -119,6 +119,7 @@ p {
 
 /* // FOOTER // */
 footer {
+	clear: right;
 }
 #footerNav { /* ul */
 	margin: 0 auto;
