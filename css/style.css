@@ -6,43 +6,117 @@ font-weight: 300, 600, 800
 COLORS
 bkgrnd dark blue: #326088;
 bkgrnd light blue: #517ea3;
-bkgrnd light gray top: #f2f4f7;
+bkgrnd light gray top: ##f2f4f7;
 bkgrnd light gray bottom: #f3f4f6;
 text dark blue: #002b56;
 text link blue: #3b6f98;
 text gray: #585858;
 copyright text: #acacad;
 */
+
+/* // MOBILE STYLES // */
 body {
 	font-family: 'Open Sans', sans-serif;
 }
+header {
+	height: 250px;
+ 	background: #517ea3; /* do not support gradients */
+ 	background: linear-gradient(#517ea3, #326088); /* standard syntax */
+ 	background: -webkit-linear-gradient(#517ea3, #326088); /* safari */
+ 	background: -o-linear-gradient(#517ea3, #326088); /* opera */
+ 	background: -moz-linear-gradient(#517ea3, #326088); /* firefox */
+ 	border-bottom: 1px solid white;
+}
+section {
+	background: #f2f4f7; /* do not support gradients */
+ 	background: linear-gradient(##f2f4f7, ##f2f4f7); /* standard syntax */
+ 	background: -webkit-linear-gradient(##f2f4f7, ##f2f4f7); /* safari */
+ 	background: -o-linear-gradient(##f2f4f7, ##f2f4f7); /* opera */
+ 	background: -moz-linear-gradient(##f2f4f7, ##f2f4f7); /* firefox */	
+}
 #phones {
+	float: left;
+	margin: 75px 100px;
+
 
 }
 #logo {
+	float: left;
 
 }
 #login {
+	padding: 10px 20px;
+	color: white;
+	background: #517ea3; /* do not support gradients */
+ 	background: linear-gradient(#517ea3, #326088); /* standard syntax */
+ 	background: -webkit-linear-gradient(#517ea3, #326088); /* safari */
+ 	background: -o-linear-gradient(#517ea3, #326088); /* opera */
+ 	background: -moz-linear-gradient(#517ea3, #326088); /* firefox */
+ 	box-shadow: 0 0 5px black;
+ 	border: none;
+ 	border-radius: 3px;
 
 }
+#loginText {
+	font-size: 25px;
+	color: white;
+	font-weight: 600;
+	text-decoration: none;
+
+}
+#homeIcon {
+	padding: 0 20px 0 0;
+}
 #boxContent {
+	float: right;
+	margin: 0 200px;
+	padding: 25px 70px;
+	border-radius: 5px;
+	background: white; /* do not support gradients */
+ 	background: linear-gradient(white, #f3f4f6); /* standard syntax */
+ 	background: -webkit-linear-gradient(white, #f3f4f6); /* safari */
+ 	background: -o-linear-gradient(white, #f3f4f6); /* opera */
+ 	background: -moz-linear-gradient(white, #f3f4f6); /* firefox */
+ 	box-shadow: -5px 0 5px -5px #333, 5px 0 5px -5px #333;
 
 }
 h1 {
-
-}
-h2 {
+	margin: 0 0 20px 0;
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 1.25em;
+	color: #002b56;
 
 }
 p {
+	margin: 10px 0;
+	font-size: 18px;
+	line-height: 1.4em;
+	color: #585858;
 
 }
 .bold {
+	font-weight: 600;
 
 }
 .storeButtons {
 
 }
+li {
+	padding: 10px 20px;
+	display: inline-block;
+}
 .footerNav {
-	
+	color: #3b6f98;
+	font-weight: 800;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+#copyright {
+	color: #acacad;
+}
+
+/* // DESKTOP STYLES // */
+@media (min-width: 800px) {
+
 }
