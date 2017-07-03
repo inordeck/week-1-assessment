@@ -20,7 +20,7 @@ body {
 header { /* // BLUE BACKGROUND // */
 	/* positioning */
 	margin: 0 auto;
-	height: 250px;
+	height: 275px;
 
 	/* style */
 	background: #517ea3; /* do not support gradients */
@@ -43,21 +43,21 @@ section { /* // GRAY BACKGROUND // */
 	display: inline-block;
 	float: left;
 	margin-top: 100px;
-	margin-left: 10%;
+	margin-left: 13%;
 /*	margin: 100px 40px 0 225px; */
 	width: 25%;
 }
 #logoLogin {
-	display: inline;
 	width: 35%;
 	float: right;
 	margin-top: 100px;
-	margin-right: 10%;
+	margin-right: 13%;
 }
 #logo {
 	/* positioning */
 	display: inline-block;
 	float: left;
+	margin: 0 0 0 -105px;
 /*	margin: 100px 0 0 0;
 	width: 250px */
 }
@@ -67,7 +67,7 @@ section { /* // GRAY BACKGROUND // */
 #login { /* button */
 	/* positioning */
 	display: inline-block;
-	margin-top: 10px;
+	margin-top: 20px;
 	float: right;
 /*	margin: 120px 225px 0 10px; */
 	padding: 8px 12px;
@@ -108,8 +108,8 @@ section { /* // GRAY BACKGROUND // */
 	width: 35%;
 /*	margin: -500px 225px 0 40px; */
 	padding: 25px 50px;
-	margin-top: -30%;
-	margin-right: 10%;
+	margin-top: -32%;
+	margin-right: 13%;
 	clear: left;
 
 	/* style */
@@ -144,9 +144,6 @@ p {
 	/* style */
 	font-weight: 600;
 }
-.storeButtons {
-	display: inline-block;
-}
 .apple {
 	/* positioning */
 	float: right;
@@ -154,7 +151,7 @@ p {
 }
 .google {
 	/* positioning */
-	float: right;
+	float: left;
 	/*	margin: 40px 0 20px 20px; */
 }
 
