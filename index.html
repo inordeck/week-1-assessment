@@ -2,40 +2,41 @@
 <html>
 <head>
 	<title>Instagram</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900" rel="stylesheet">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/reset.css"> <!-- nuclear reset of default styles -->
+	<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- link to stylesheet -->
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,900" rel="stylesheet"> <!-- google font source sans pro 300, 600, 900 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- for @media sizes -->
+		<!-- the styles i wrote in the primary styles (mobile) were overwriting my @media styles... wtf? -->
 </head>
 <body>
-	<header>
+	<header> <!-- group for phones, logo and login button and gradient blue background -->
 		<img id="phones" src="images/phones.png" alt="image of phones wtih instagram app example">
-		<div id="logoLogin">
+		<div id="logoLogin"> <!-- create div to group logo and login button in order to use % sizes and float left / float right-->
 			<img id="logo" src="images/brand.png" alt="instagram logo">
 			<button type="button" id="login"><a id="loginText" href="https://www.instagram.com/accounts/login/"><img id="homeIcon" src="images/home.png" alt="home icon">Log in</a></button>
 		</div>	
 	</header>
-	<section>
+	<section> <!-- section encompases main content and footer to create gray gradient background -->
 	<main>
-		<div id="boxContent">
+		<div id="boxContent"> <!-- all content in white box -->
 			<h1>Capture and Share </br>the World's Moments</h1>
 			<p>Instagram is a <span class="bold">fast</span>, <span class="bold">beautiful</span> and <span class="bold">fun</span> way to share your life with friends and family.</p>
 			<p>Take a picture of video, choose a filter to transform its look and feel, then post to Instagram &mdash; it's that easy. You can even share to Facebook, Twitter, Tumblr and more. It's a new way to see the world.</p>
 			<p>Oh yeah, did we mention it's free?</p>
-			<button type="button" class="storeButtons" id="apple">
+			<button type="button" class="storeButtons" id="apple"> <!-- apple button -->
 				<a href="https://itunes.apple.com/us/app/instagram/id389801252?mt=8" target="_blank">
 				<img src="images/badge-iphone.png" alt="go to Apple app store">
 				</a>
-			</button>
-			<button type="button" class="storeButtons" id="google">
+			</button> <!-- end apple button -->
+			<button type="button" class="storeButtons" id="google"> <!-- google button -->
 				<a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=en" target="_blank">
 				<img src="images/badge-android.png" alt="go to google play store">
 				</a>
-			</button>
+			</button> <!-- end of google button -->
 		</div> <!-- end of boxContent div-->
 	</main>
 	<footer>
-		<ul id="footerNav">
+		<ul id="footerNav"> <!-- ul for footer nav and include copyright -->
 			<li><a class="footerLinks" href="https://www.instagram.com/about/us/">about us</a></li>
 			<li><a class="footerLinks" href="https://help.instagram.com/">support</a></li>
 			<li><a class="footerLinks" href="http://blog.instagram.com/">blog</a></li>
@@ -44,9 +45,9 @@
 			<li><a class="footerLinks" href="https://www.instagram.com/about/jobs/">jobs</a></li>
 			<li><a class="footerLinks" href="https://help.instagram.com/155833707900388">privacy</a></li>
 			<li><a class="footerLinks" href="https://help.instagram.com/478745558852511">terms</a></li>
-			<li id="copyright">&copy; 2014 instagram</li>
+			<li id="copyright">&copy; 2014 instagram</li> <!-- add copyright to end of nav ul -->
 		</ul> <!-- end of footerNav -->
 	</footer>
-	</section>
+	</section> <!-- end of section / gray radient background -->
 </body>
 </html>
