@@ -1,0 +1,348 @@
+/*
+FONTS
+font-family: 'Source Sans Pro', sans-serif
+font-weight: 300, 600, 900
+
+COLORS
+bkgrnd dark blue: #326088;
+bkgrnd light blue: #517ea3;
+bkgrnd light gray top: ##f2f4f7;
+bkgrnd light gray bottom: #f3f4f6;
+text dark blue: #002b56;
+text link blue: #3b6f98;
+text gray: #585858;
+copyright text: #acacad;
+*/
+
+/* // MOBILE STYLES // */
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+header { /* // BLUE BACKGROUND // */
+	/* positioning */
+	margin: 0 auto;
+	height: 300px;
+
+	/* style */
+ 	background: #517ea3; /* do not support gradients */
+ 	background: linear-gradient(#517ea3, #326088); /* standard syntax */
+ 	background: -webkit-linear-gradient(#517ea3, #326088); /* safari */
+ 	background: -o-linear-gradient(#517ea3, #326088); /* opera */
+ 	background: -moz-linear-gradient(#517ea3, #326088); /* firefox */
+ 	border-bottom: 1px solid white;
+}
+section { /* // GRAY BACKGROUND // */
+	/* positioning */
+
+	/* style */
+	background: #f2f4f7; /* do not support gradients */
+ 	background: linear-gradient(##f2f4f7, ##f2f4f7); /* standard syntax */
+ 	background: -webkit-linear-gradient(##f2f4f7, ##f2f4f7); /* safari */
+ 	background: -o-linear-gradient(##f2f4f7, ##f2f4f7); /* opera */
+ 	background: -moz-linear-gradient(##f2f4f7, ##f2f4f7); /* firefox */	
+}
+#phones {
+	/* positioning */
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin-top: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+}
+#logo {
+	/* positioning */
+	position: absolute; 
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	padding-top: 30px;
+}
+
+/* // LOG IN BUTTON // */
+/* // why would you hide your login button by making it the same color as the background it is on? */
+#login { /* button */
+	/* positioning */
+	position: absolute; 
+	left: 0;
+	right: 0;
+	margin-top: 125px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 110px;
+	padding: 6px 8px;
+
+	/* style */
+	color: white;
+	background: #517ea3; /* do not support gradients */
+ 	background: linear-gradient(#517ea3, #326088); /* standard syntax */
+ 	background: -webkit-linear-gradient(#517ea3, #326088); /* safari */
+ 	background: -o-linear-gradient(#517ea3, #326088); /* opera */
+ 	background: -moz-linear-gradient(#517ea3, #326088); /* firefox */
+ 	box-shadow: 0 0 5px black;
+ 	border: none;
+ 	border-radius: 3px;
+}
+#homeIcon {
+	/* positioning */
+	float: left;
+	margin: 0 10px 0 0;
+}
+#loginText { /* button text */
+	/* positioning */
+	float: right;
+	margin: 0;
+
+	/* style */
+	font-size: 18px;
+	color: white;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+/* // BOX CONTENT // */
+#boxContent {
+	/* positioning */
+	padding: 25px 40px;
+	margin: 0 40px;
+
+	/* style */
+	border-radius: 6px;
+	background: white; /* do not support gradients */
+ 	background: linear-gradient(white, #f3f4f6); /* standard syntax */
+ 	background: -webkit-linear-gradient(white, #f3f4f6); /* safari */
+ 	background: -o-linear-gradient(white, #f3f4f6); /* opera */
+ 	background: -moz-linear-gradient(white, #f3f4f6); /* firefox */
+ 	box-shadow: -10px 0 10px -5px rgba(0,0,0,0.25) /* left side */, 10px 0 10px -5px rgba(0,0,0,0.25) /* right side */;
+}
+h1 {
+	/* positioning */
+	margin: 0 0 20px 0;
+
+	/* style */
+	font-weight: 800;
+	font-size: 30px;
+	line-height: 1.25em;
+	color: #002b56;
+}
+p {
+	/* positioning */
+	margin: 20px 0;
+
+	/* style */
+	font-size: 18px;
+	line-height: 1.4em;
+	color: #585858;
+}
+.bold {
+	/* style */
+	font-weight: 600;
+}
+.storeButtons {
+	display: inline-block;
+}
+.apple{
+	/* positioning */
+
+}
+.google {
+
+}
+
+/* // FOOTER // */
+footer {
+	/* positioning */
+
+}
+#footerNav { /* ul */
+	/* positioning */
+	margin: 0 auto;
+	padding: 50px 0;
+
+	/* style */
+	text-align: center;
+}
+.footerLinks { /* li class */
+	/* style */
+	color: #517ea3;
+	font-weight: 900;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+li { /* links */
+	/* positioning */
+	margin left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+#copyright { /* last li */
+	color: #acacad;
+}
+
+
+/* // FOR DESKTOP STYLES LATER // */
+
+@media (min-width: 1250px) {
+	/* // PLACE ALL STYLES INSIDE @MEDIA // */
+	body {
+		font-family: 'Source Sans Pro', sans-serif;
+	}
+	header { /* // BLUE BACKGROUND // */
+		/* positioning */
+		margin: 0 auto;
+		height: 275px;
+
+		/* style */
+	 	background: #517ea3; /* do not support gradients */
+	 	background: linear-gradient(#517ea3, #326088); /* standard syntax */
+	 	background: -webkit-linear-gradient(#517ea3, #326088); /* safari */
+	 	background: -o-linear-gradient(#517ea3, #326088); /* opera */
+ 		background: -moz-linear-gradient(#517ea3, #326088); /* firefox */
+ 		border-bottom: 1px solid white;
+	}
+	section { /* // GRAY BACKGROUND // */
+		/* style */
+		background: #f2f4f7; /* do not support gradients */
+	 	background: linear-gradient(##f2f4f7, ##f2f4f7); /* standard syntax */
+	 	background: -webkit-linear-gradient(##f2f4f7, ##f2f4f7); /* safari */
+	 	background: -o-linear-gradient(##f2f4f7, ##f2f4f7); /* opera */
+	 	background: -moz-linear-gradient(##f2f4f7, ##f2f4f7); /* firefox */	
+	}
+	#phones {
+		/* positioning */
+		float: left;
+		margin: 100px 40px 0 225px;
+	}
+	#logo {
+		/* positioning */
+		float: left;
+		margin: 100px 0 0 0;
+	}
+
+	/* // LOG IN BUTTON // */
+	/* // why would you hide your login button by making it the same color as the background it is on? */
+	#login { /* button */
+		/* positioning */
+		display: inline-block;
+		float: right;
+		margin: 120px 225px 0 10px;
+		padding: 8px 12px;
+
+		/* style */
+		color: white;
+		background: #517ea3; /* do not support gradients */
+ 		background: linear-gradient(#517ea3, #326088); /* standard syntax */
+ 		background: -webkit-linear-gradient(#517ea3, #326088); /* safari */
+ 		background: -o-linear-gradient(#517ea3, #326088); /* opera */
+ 		background: -moz-linear-gradient(#517ea3, #326088); /* firefox */
+ 		box-shadow: 0 0 5px black;
+ 		border: none;
+ 		border-radius: 3px;
+	}
+	#homeIcon {
+		/* positioning */
+		float: left;
+		margin: 0 10px 0 0;
+	}
+	#loginText { /* button text */
+		/* positioning */
+		float: right;
+		margin: 0;
+
+		/* style */
+		font-size: 18px;
+		color: white;
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+	/* // BOX CONTENT // */
+	#boxContent {
+		/* positioning */
+		padding: 25px 225px;
+	/*	display: inline-block;
+		float: right;
+		width: 400px;
+		margin: 0 auto;
+	 */
+		/* style */
+		border-radius: 6px;
+		background: white; /* do not support gradients */
+	 	background: linear-gradient(white, #f3f4f6); /* standard syntax */
+	 	background: -webkit-linear-gradient(white, #f3f4f6); /* safari */
+ 		background: -o-linear-gradient(white, #f3f4f6); /* opera */
+ 		background: -moz-linear-gradient(white, #f3f4f6); /* firefox */
+ 		box-shadow: -10px 0 10px -5px rgba(0,0,0,0.25) /* left side */, 10px 0 10px -5px rgba(0,0,0,0.25) /* right side */;
+	}
+	h1 {
+		/* positioning */
+		margin: 0 0 20px 0;
+
+		/* style */
+		font-weight: 800;
+		font-size: 30px;
+		line-height: 1.25em;
+		color: #002b56;
+	}
+	p {
+		/* positioning */
+		margin: 20px 0;
+
+		/* style */
+		font-size: 18px;
+		line-height: 1.4em;
+		color: #585858;
+	}
+	.bold {
+		/* style */
+		font-weight: 600;
+	}
+	.storeButtons {
+		display: inline-block;
+	}
+	.apple{
+		/* positioning */
+		float: right;
+	/*	margin: 40px 20px 20px 0; */
+	}
+	.google {
+		/* positioning */
+		float: right;
+	/*	margin: 40px 0 20px 20px; */
+	}
+
+	/* // FOOTER // */
+	footer {
+		/* positioning */
+		clear: left;
+	}
+	#footerNav { /* ul */
+		/* positioning */
+		margin: 0 auto;
+		padding: 50px 0;
+
+		/* style */
+		text-align: center;
+	}
+	.footerLinks { /* li class */
+		/* style */
+		color: #517ea3;
+		font-weight: 900;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	li { /* links */
+		/* positioning */
+		display: inline-block;
+		margin left: auto;
+		margin-right: auto;
+		padding: 10px;
+	}
+	#copyright { /* last li */
+		color: #acacad;
+	}
+} /* // END OF @MEDIA DESKTOP STYLES // */

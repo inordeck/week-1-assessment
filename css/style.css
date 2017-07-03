@@ -14,20 +14,19 @@ text gray: #585858;
 copyright text: #acacad;
 */
 
-/* // DESKTOP STYLES // */
 body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 header { /* // BLUE BACKGROUND // */
 	/* positioning */
 	margin: 0 auto;
-	height: 275px;
+	height: 250px;
 
 	/* style */
- 	background: #517ea3; /* do not support gradients */
- 	background: linear-gradient(#517ea3, #326088); /* standard syntax */
- 	background: -webkit-linear-gradient(#517ea3, #326088); /* safari */
- 	background: -o-linear-gradient(#517ea3, #326088); /* opera */
+	background: #517ea3; /* do not support gradients */
+	background: linear-gradient(#517ea3, #326088); /* standard syntax */
+	background: -webkit-linear-gradient(#517ea3, #326088); /* safari */
+	background: -o-linear-gradient(#517ea3, #326088); /* opera */
  	background: -moz-linear-gradient(#517ea3, #326088); /* firefox */
  	border-bottom: 1px solid white;
 }
@@ -41,13 +40,26 @@ section { /* // GRAY BACKGROUND // */
 }
 #phones {
 	/* positioning */
+	display: inline-block;
 	float: left;
-	margin: 100px 40px 0 225px;
+	margin-top: 100px;
+	margin-left: 10%;
+/*	margin: 100px 40px 0 225px; */
+	width: 25%;
+}
+#logoLogin {
+	display: inline;
+	width: 35%;
+	float: right;
+	margin-top: 100px;
+	margin-right: 10%;
 }
 #logo {
 	/* positioning */
+	display: inline-block;
 	float: left;
-	margin: 100px 0 0 0;
+/*	margin: 100px 0 0 0;
+	width: 250px */
 }
 
 /* // LOG IN BUTTON // */
@@ -55,20 +67,21 @@ section { /* // GRAY BACKGROUND // */
 #login { /* button */
 	/* positioning */
 	display: inline-block;
+	margin-top: 10px;
 	float: right;
-	margin: 120px 225px 0 10px;
+/*	margin: 120px 225px 0 10px; */
 	padding: 8px 12px;
 
 	/* style */
 	color: white;
 	background: #517ea3; /* do not support gradients */
- 	background: linear-gradient(#517ea3, #326088); /* standard syntax */
- 	background: -webkit-linear-gradient(#517ea3, #326088); /* safari */
- 	background: -o-linear-gradient(#517ea3, #326088); /* opera */
- 	background: -moz-linear-gradient(#517ea3, #326088); /* firefox */
- 	box-shadow: 0 0 5px black;
- 	border: none;
- 	border-radius: 3px;
+	background: linear-gradient(#517ea3, #326088); /* standard syntax */
+	background: -webkit-linear-gradient(#517ea3, #326088); /* safari */
+	background: -o-linear-gradient(#517ea3, #326088); /* opera */
+	background: -moz-linear-gradient(#517ea3, #326088); /* firefox */
+	box-shadow: 0 0 5px black;
+	border: none;
+	border-radius: 3px;
 }
 #homeIcon {
 	/* positioning */
@@ -90,17 +103,20 @@ section { /* // GRAY BACKGROUND // */
 /* // BOX CONTENT // */
 #boxContent {
 	/* positioning */
-	padding: 25px 225px;
-/*	display: inline-block;
+	display: inline-block;
 	float: right;
-	width: 400px;
-	margin: 0 auto;
- */
+	width: 35%;
+/*	margin: -500px 225px 0 40px; */
+	padding: 25px 50px;
+	margin-top: -30%;
+	margin-right: 10%;
+	clear: left;
+
 	/* style */
 	border-radius: 6px;
 	background: white; /* do not support gradients */
- 	background: linear-gradient(white, #f3f4f6); /* standard syntax */
- 	background: -webkit-linear-gradient(white, #f3f4f6); /* safari */
+	background: linear-gradient(white, #f3f4f6); /* standard syntax */
+	background: -webkit-linear-gradient(white, #f3f4f6); /* safari */
  	background: -o-linear-gradient(white, #f3f4f6); /* opera */
  	background: -moz-linear-gradient(white, #f3f4f6); /* firefox */
  	box-shadow: -10px 0 10px -5px rgba(0,0,0,0.25) /* left side */, 10px 0 10px -5px rgba(0,0,0,0.25) /* right side */;
@@ -131,21 +147,21 @@ p {
 .storeButtons {
 	display: inline-block;
 }
-.apple{
+.apple {
 	/* positioning */
 	float: right;
-/*	margin: 40px 20px 20px 0; */
+	/*	margin: 40px 20px 20px 0; */
 }
 .google {
 	/* positioning */
 	float: right;
-/*	margin: 40px 0 20px 20px; */
+	/*	margin: 40px 0 20px 20px; */
 }
 
 /* // FOOTER // */
 footer {
 	/* positioning */
-	clear: left;
+	clear: right;
 }
 #footerNav { /* ul */
 	/* positioning */
@@ -171,10 +187,5 @@ li { /* links */
 }
 #copyright { /* last li */
 	color: #acacad;
-}
-
-/* // FOR DESKTOP STYLES LATER // */
-@media (min-width: 1250px) {
-	/* // PLACE ALL STYLES INSIDE @MEDIA // */
-
+	}
 }
