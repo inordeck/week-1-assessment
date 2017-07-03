@@ -19,8 +19,11 @@ body {
 	font-family: 'Source Sans Pro', sans-serif;
 }
 header { /* // BLUE BACKGROUND // */
+	/* positioning */
 	margin: 0 auto;
 	height: 275px;
+
+	/* style */
  	background: #517ea3; /* do not support gradients */
  	background: linear-gradient(#517ea3, #326088); /* standard syntax */
  	background: -webkit-linear-gradient(#517ea3, #326088); /* safari */
@@ -29,6 +32,7 @@ header { /* // BLUE BACKGROUND // */
  	border-bottom: 1px solid white;
 }
 section { /* // GRAY BACKGROUND // */
+	/* style */
 	background: #f2f4f7; /* do not support gradients */
  	background: linear-gradient(##f2f4f7, ##f2f4f7); /* standard syntax */
  	background: -webkit-linear-gradient(##f2f4f7, ##f2f4f7); /* safari */
@@ -36,20 +40,26 @@ section { /* // GRAY BACKGROUND // */
  	background: -moz-linear-gradient(##f2f4f7, ##f2f4f7); /* firefox */	
 }
 #phones {
+	/* positioning */
 	float: left;
-	margin: 100px 100px;
+	margin: 100px 40px 0 225px;
 }
 #logo {
+	/* positioning */
 	float: left;
-	margin: 100px 0;
+	margin: 100px 0 0 0;
 }
 
 /* // LOG IN BUTTON // */
 /* // why would you hide your login button by making it the same color as the background it is on? */
 #login { /* button */
+	/* positioning */
+	display: inline-block;
 	float: right;
-	margin: 115px 100px 0 25px;
-	padding: 10px 20px;
+	margin: 120px 225px 0 10px;
+	padding: 8px 12px;
+
+	/* style */
 	color: white;
 	background: #517ea3; /* do not support gradients */
  	background: linear-gradient(#517ea3, #326088); /* standard syntax */
@@ -61,14 +71,17 @@ section { /* // GRAY BACKGROUND // */
  	border-radius: 3px;
 }
 #homeIcon {
+	/* positioning */
 	float: left;
-	margin: 0 10px 0 -10px;
-
+	margin: 0 10px 0 0;
 }
 #loginText { /* button text */
+	/* positioning */
 	float: right;
-	margin: 0 0 0 10px;
-	font-size: 20px;
+	margin: 0;
+
+	/* style */
+	font-size: 18px;
 	color: white;
 	font-weight: 600;
 	text-decoration: none;
@@ -76,10 +89,14 @@ section { /* // GRAY BACKGROUND // */
 
 /* // BOX CONTENT // */
 #boxContent {
+	/* positioning */
+	padding: 25px 225px;
+/*	display: inline-block;
 	float: right;
 	width: 400px;
-	margin: -500px 100px 50px 100px;
-	padding: 25px 70px;
+	margin: 0 auto;
+ */
+	/* style */
 	border-radius: 6px;
 	background: white; /* do not support gradients */
  	background: linear-gradient(white, #f3f4f6); /* standard syntax */
@@ -89,49 +106,64 @@ section { /* // GRAY BACKGROUND // */
  	box-shadow: -10px 0 10px -5px rgba(0,0,0,0.25) /* left side */, 10px 0 10px -5px rgba(0,0,0,0.25) /* right side */;
 }
 h1 {
+	/* positioning */
 	margin: 0 0 20px 0;
+
+	/* style */
 	font-weight: 800;
 	font-size: 30px;
 	line-height: 1.25em;
 	color: #002b56;
 }
 p {
+	/* positioning */
 	margin: 20px 0;
+
+	/* style */
 	font-size: 18px;
 	line-height: 1.4em;
 	color: #585858;
 }
 .bold {
+	/* style */
 	font-weight: 600;
 }
 .storeButtons {
+	display: inline-block;
 }
 .apple{
-	display: inline-block;
-	float: left;
-	margin: 40px 20px 20px 0;
+	/* positioning */
+	float: right;
+/*	margin: 40px 20px 20px 0; */
 }
 .google {
-	display: inline-block;
+	/* positioning */
 	float: right;
-	margin: 40px 0 20px 20px;
+/*	margin: 40px 0 20px 20px; */
 }
 
 /* // FOOTER // */
 footer {
-	clear: right;
+	/* positioning */
+	clear: left;
 }
 #footerNav { /* ul */
+	/* positioning */
 	margin: 0 auto;
+	padding: 50px 0;
+
+	/* style */
 	text-align: center;
 }
 .footerLinks { /* li class */
-	color: #3b6f98;
+	/* style */
+	color: #517ea3;
 	font-weight: 900;
 	text-decoration: none;
 	text-transform: uppercase;
 }
 li { /* links */
+	/* positioning */
 	display: inline-block;
 	margin left: auto;
 	margin-right: auto;
@@ -142,7 +174,7 @@ li { /* links */
 }
 
 /* // FOR DESKTOP STYLES LATER // */
-@media (min-width: 800px) {
+@media (min-width: 1250px) {
 	/* // PLACE ALL STYLES INSIDE @MEDIA // */
 
 }
